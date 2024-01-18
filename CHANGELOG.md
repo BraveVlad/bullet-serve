@@ -1,3 +1,12 @@
+-style: prettier config
+-fix: prettier config max line numbers
+-feat: add prettier config file
+-refactor: concise functions
+-Merge branch 'main' of https://github.com/BraveVlad/bullet-serve
+-style(docs): adjust formatting and spacing in README.md
+-Merge branch 'main' of https://github.com/BraveVlad/bullet-serve
+-refactor(back): refactored model enums
+-CHANGELOG
 -Merge branch 'main' of https://github.com/BraveVlad/bullet-serve
 -fix: add missing dot selectors
 -fix(back): converted model types to interfaces
