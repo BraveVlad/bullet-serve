@@ -61,11 +61,9 @@ async function sendHttpRequest(order: Order, userRole: UserRole): Promise<void> 
     const serverUrl = 'dummy-server-url';
 
     try {
-        // Send HTTP request to the server
         const response = await axios.post(serverUrl, { html });
         console.log(response.data);
     } catch (error: any) {
-        // Explicitly type the error variable
         console.error('Error sending HTTP request:', error.message);
     }
 }
