@@ -1,3 +1,15 @@
+-chore: refine gitignore
+-config: updated package.json ssas watcher directory.
+-css compile
+-feat: add tailwind height classes
+-Merge branch 'main' of https://github.com/BraveVlad/bullet-serve
+-refactor: reformat index html file
+-Merge branch 'main' of https://github.com/BraveVlad/bullet-serve
+-feat: update css imports
+-docs: update README
+-chore: update gitignore
+-feat: build reset and tailwind css files
+-CHANGELOG
 -feat!: remove mongo string check
 -feat: add more tailwind-like classes
 -feat: add vscode file view settings
