@@ -1,6 +1,6 @@
-type State = "ordered" | "approved" | "kitchen" | "Paid" | "delivery";
-type Resolution = "Delivered" | "Admin cancel" | "Kitchen cancel";
-type Role = "Admin" | "chef" | "cashier" | "Deivery";
+type State = "ordered" | "approved" | "kitchen" | "paid" | "delivery";
+type Resolution = "completed" | "declined" | "aborted";
+type Role = "admin" | "kitchen" | "cashier" | "delivery";
 
 interface Order {
 	orderID: string;
