@@ -1,3 +1,15 @@
+-feat!: remove mongo string check
+-feat: add more tailwind-like classes
+-feat: add vscode file view settings
+-fix: add js output files from app ts file
+-continue last commit
+-refactor!: move scss reset to reset file
+-Merge branch 'main' of https://github.com/BraveVlad/bullet-serve
+-chore: update gitignore
+-Merge branch 'main' of https://github.com/BraveVlad/bullet-serve
+-docs: add README
+-feat: add basic tailwind classes
+-CHANGELOG
 -Merge branch 'main' of https://github.com/BraveVlad/bullet-serve
 -copy starter files
 -Merge branch 'main' of https://github.com/BraveVlad/bullet-serve
