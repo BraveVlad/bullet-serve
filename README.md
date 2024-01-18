@@ -1,9 +1,9 @@
 # bullet-serve
 
+# phase one
 
-# phase one 
+## screens
 
-## screens 
 register page
 login page
 Customer page
@@ -13,8 +13,7 @@ kitchen
 cashier
 delivery
 
-
-## states for order: 
+## states for order:
 
 create order
 approval
@@ -22,8 +21,7 @@ kitchen
 cashier
 delivery
 
-
-## model 
+## model
 
 Order
 
@@ -47,10 +45,6 @@ userName : string
 password : string
 phone : string
 orders[] : Order[]
-
-
-
-
 
 # phase two
 
