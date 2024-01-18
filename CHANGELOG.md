@@ -1,3 +1,7 @@
+-Merge pull request #1 from BraveVlad/phase-one-models
+-feat: phase one types and models
+-build: restored connection string check, added mongoose db name
+-CHANGELOG
 -chore: refine gitignore
 -config: updated package.json ssas watcher directory.
 -css compile
