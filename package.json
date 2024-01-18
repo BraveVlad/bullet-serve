@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "run-p dev:*",
 		"dev:server": "ts-node-dev --transpile-only src/index.ts",
-		"dev:sass": "sass public --watch",
+		"dev:sass": "sass public/styles --watch",
 		"dev:ts": "tsc --watch --project public"
 	},
 	"keywords": [],
