@@ -254,6 +254,14 @@
   justify-content: space-evenly;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
 .gap-0 {
   gap: 0;
 }
