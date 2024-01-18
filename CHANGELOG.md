@@ -1,3 +1,10 @@
+-Merge branch 'main' of https://github.com/BraveVlad/bullet-serve
+-fix: add missing dot selectors
+-fix(back): converted model types to interfaces
+-Merge branch 'main' of https://github.com/BraveVlad/bullet-serve
+-CHANGELOG
+-feat (front): removed tailwind styles link
+-feat(front): removed 'public' from styles href
 -Merge pull request #1 from BraveVlad/phase-one-models
 -feat: phase one types and models
 -build: restored connection string check, added mongoose db name
