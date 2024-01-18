@@ -5,6 +5,6 @@
   "singleQuote": true,
   "tabWidth": 2,
   "trailingComma": "es5",
-  "printWidth": 150,
+  "printWidth": 80,
   "proseWrap": "never"
 }
