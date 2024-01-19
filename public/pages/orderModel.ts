@@ -1,8 +1,8 @@
-type State = 'ordered' | 'approved' | 'kitchen' | 'paid' | 'delivery'
-type Resolution = 'completed' | 'declined' | 'aborted'
-type Role = 'admin' | 'kitchen' | 'cashier' | 'delivery'
+export type State = 'ordered' | 'approved' | 'kitchen' | 'paid' | 'delivery'
+export type Resolution = 'completed' | 'declined' | 'aborted'
+export type Role = 'admin' | 'kitchen' | 'cashier' | 'delivery'
 
-interface Order {
+export interface Order {
   orderID: string
   state: State
   items: string[]
@@ -12,13 +12,13 @@ interface Order {
   orderDate: Date
 }
 
-interface EmployeeUser {
+export interface EmployeeUser {
   userName: string
   password: string
   role: Role
 }
 
-interface CustomerUser {
+export interface CustomerUser {
   userName: string
   password: string
   phone: string
