@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { Order, State, Resolution, EmployeeUser, CustomerUser } from './pages/orderModel';
+import { Order, State, Resolution, EmployeeUser, CustomerUser } from './orderModel';
 
 interface CustomRequest extends Request {
   user?: EmployeeUser | CustomerUser;
