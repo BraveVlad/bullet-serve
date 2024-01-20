@@ -1,3 +1,30 @@
+.project-explain-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 2rem;
+  text-align: center;
+  width: 70ch;
+  margin: auto;
+}
 
+.index-continue-button {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  font-weight: 800;
+  text-align: center;
+  transition-property: background-color, border-color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.index-continue-button:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
 
 /*# sourceMappingURL=styles.css.map */
