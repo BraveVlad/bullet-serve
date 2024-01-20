@@ -1,3 +1,21 @@
+-feat: add prettier ignore file
+-feat(*)!: add global guide
+-Merge pull request #4 from BraveVlad/feat(front)--orderModels.ts
+-fix(front): orderModel location
+-refactor(front): more front logic
+-feat(front): basic client logic
+-Merge pull request #3 from BraveVlad/feat(front)--orderModels.ts
+-feat(front): orderModels.ts
+-feat: add top margin
+-fix: margin type
+-fix: update margin classes
+-feat: add register page
+-fix: move title to container div
+-feat(index): add page title
+-other(style): compile
+-fix: change css imports
+-feat: add more classes
+-CHANGELOG
 -style: prettier config
 -fix: prettier config max line numbers
 -feat: add prettier config file
