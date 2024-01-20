@@ -34,25 +34,23 @@ export function authenticateUser(req: CustomRequest, res: Response, next: Functi
     res.status(401).json({ error: 'Authentication failed' });
   }
 }
-
-
 export function getAllOrders(req: CustomRequest, res: Response): void {
-  const user: EmployeeUser | CustomerUser = req.user;
-  const orders: Order[] = user && user.role === 'admin' ? getAdminOrders() : user?.orders || [];
+  const user: EmployeeUser | CustomerUser | undefined = req.user;
+  const orders: Order[] = user && 'role' in user && user.role === 'admin' ? getAdminOrders() : (user as CustomerUser)?.orders || [];
   res.json(orders);
 }
 
-
+// Filter orders based on state
 export function filterOrdersByState(req: CustomRequest, res: Response): void {
-  const user: EmployeeUser | CustomerUser = req.user;
+  const user: EmployeeUser | CustomerUser | undefined = req.user;
   const requestedState: State = req.params.state as State;
-  const orders: Order[] = user && user.role === 'admin' ? getAdminOrders() : user?.orders || [];
+  const orders: Order[] = user && 'role' in user && user.role === 'admin' ? getAdminOrders() : (user as CustomerUser)?.orders || [];
 
   const filteredOrders = orders.filter((order) => order.state === requestedState);
   res.json(filteredOrders);
 }
 
-// Dummy 
+// Dummy orders for demonstration purposes
 function getAdminOrders(): Order[] {
   return [
     {
@@ -64,6 +62,6 @@ function getAdminOrders(): Order[] {
       resolution: 'completed',
       orderDate: new Date(),
     },
-
+    // Add more sample orders as needed
   ];
 }
