@@ -4,5 +4,9 @@ const continueButton = document.querySelector(
 
 continueButton.addEventListener('click', e => {
   e.preventDefault()
-  console.log('hello world!')
+  Continue()
 })
+
+function Continue() {
+  console.log('Hello World!')
+}
