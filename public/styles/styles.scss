@@ -28,3 +28,44 @@
   cursor: pointer;
   transform: scale(1.03);
 }
+
+.register-container-placer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+  width: 1000px;
+  height: 500px;
+  background-color: transparent;
+  border: 5px solid black;
+  border-radius: 4rem;
+
+  &__input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  &__name-container {
+    display: flex;
+    gap: 3rem;
+
+    &__name {
+    }
+  }
+
+  &__password-container {
+    display: flex;
+    gap: 3rem;
+
+    &__password {
+    }
+  }
+}
