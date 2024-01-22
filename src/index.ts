@@ -4,16 +4,14 @@ import 'dotenv/config'
 import express from 'express'
 import { createServer } from 'http'
 import mongoose from 'mongoose'
-
+import { router as orderRouter } from './Order.router'
 
 const app = express()
 
 app.use(cookieParser())
 app.use(json())
 
-app.get('/api/hello', (req, res) => {
-  res.send('world')
-})
+app.use('/api/orders', orderRouter)
 
 app.use(express.static('public'))
 
