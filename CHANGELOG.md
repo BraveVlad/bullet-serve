@@ -1,3 +1,19 @@
+-HOTFIX(register): github branch merge bug (ShalevAri)
+-fix(customer)!: change class names (ShalevAri)
+-docs(impr global-guide): update commit message rules (ShalevAri)
+-Merge branch 'main' of https://github.com/BraveVlad/bullet-serve
+-impr(styles): add relation comment
+-Merge branch 'main' of https://github.com/BraveVlad/bullet-serve
+-Merge branch 'main' of https://github.com/BraveVlad/bullet-serve
+-feat(customer): ordered item menu skeleton
+-feat(black): created Menu router for customer related endpoints
+-feat(back): added cookie check for employee routes, seperated routes to customer / employees.
+-fix(front): html page stubs
+-refacor(front): viewData.ts + feat: html pages
+-feat(back): requests logger middleware
+-Merge branch 'main' of https://github.com/BraveVlad/bullet-serve
+-fix(front): seperated Order.model, Seperated User.router to Employee and Customer routers.
+-chore: CHANGELOG
 -Merge branch 'main' of https://github.com/BraveVlad/bullet-serve
 -feat(*): add generic button classes
 -feat(back): Implemented PUT, PATCH Order endpoints
@@ -25,6 +41,7 @@
 -impr(global-guide)!: change comment rules
 -chore: CHANGELOG
 -feat(register): add skeleton
+-feat(front): login page and refactor(front): register.html
 -fix(impr index): change button text
 -feat(impr index): move to function
 -Merge pull request #5 from BraveVlad/fix viewData.ts + customer.html
