@@ -1,37 +1,7 @@
 import { Schema, model } from 'mongoose'
+import { Order, orderSchema } from './Order.model'
 
-const ORDER_STATE = [
-  ,
-  'STARTED',
-  'WAITING_APPROVAL',
-  'KITCHEN',
-  'CASHIER',
-  'DELIVERY',
-  'DELIVERED',
-]
-
-const RESOLUTION = ['ONGOING', 'COMPLETED', 'DECLINED', 'ABORTED']
 const EMOPLOYEE_ROLE = ['ADMIN', 'KITCHEN', 'CASHIER', 'DELIVERY']
-
-export interface Order {
-  orderID: string
-  state: string
-  items: string[]
-  price: number
-  clientNotes: string
-  resolution: (typeof EMOPLOYEE_ROLE)[number]
-  orderDate: Date
-}
-
-export const orderSchema = new Schema<Order>({
-  orderID: String,
-  state: ORDER_STATE,
-  items: [String],
-  price: Number,
-  clientNotes: String,
-  resolution: RESOLUTION,
-  orderDate: Date,
-})
 
 export interface Employee {
   username: string
@@ -59,6 +29,5 @@ export const customerSchema = new Schema<Customer>({
   orders: [orderSchema],
 })
 
-export const Order = model<Order>('Order', orderSchema, 'orders')
 export const Customer = model<Customer>('Customer', customerSchema, 'customers')
 export const Employee = model<Employee>('Employee', employeeSchema, 'employees')
