@@ -1,3 +1,29 @@
+-Merge branch 'main' of https://github.com/BraveVlad/bullet-serve
+-feat(*): add generic button classes
+-feat(back): Implemented PUT, PATCH Order endpoints
+-fix(back): Fixed typo in Order model
+-config(back): prettier rules
+-feat(back): fixed POST create order endopoint
+-feat(back): added DELETE Order endpoint
+-Merge branch 'main' of https://github.com/BraveVlad/bullet-serve
+-feat(back): added orderRouter to main app.
+-feat(back): implemented basic Order API endpoints.
+-feat(back): added features to Customer and Employee model
+-feat+fix(back): several fatures and fixes to Order model and schema
+-feat(back): extends request to hold order as property
+-Merge branch 'main' of https://github.com/BraveVlad/bullet-serve
+-feat(login): add login page
+-refactor(back): seperated models to own files.
+-feat(back): added model schemas and defined models
+-fix(back): converted model constants to enums
+-feat(register): add register button
+-fix(register): all lowercase
+-fix(register): remove action from form
+-impr(register): change padding
+-impr(register): add labels and improve
+-impr(styles): add relation comments
+-impr(global-guide)!: change comment rules
+-chore: CHANGELOG
 -feat(register): add skeleton
 -fix(impr index): change button text
 -feat(impr index): move to function
