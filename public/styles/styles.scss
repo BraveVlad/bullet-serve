@@ -163,7 +163,9 @@
   }
 }
 
-.items-container {
+// Customer
+
+.ordered-items-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -172,7 +174,7 @@
   height: 100dvh;
 }
 
-.items-background {
+.ordered-items-background {
   display: flex;
   flex-direction: column;
   background-color: #74c7ec;

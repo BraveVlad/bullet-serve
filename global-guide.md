@@ -7,6 +7,9 @@ This is a global style guide. You are to follow these rules.
 ### messages
 
 Use the `conventional commits` method with a couple tweaks
+Include your GitHub username inside parentheses in your commit messages. For example:
+
+- feat(scope): something added (YOUR-GITHUB-USERNAME-HERE)
 
 "type" refers to `feat`, `impr`, `fix`, etc
 
