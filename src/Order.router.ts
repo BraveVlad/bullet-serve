@@ -3,16 +3,13 @@ import { Order } from './Order.model'
 
 export const router = Router()
 
-router.param('orderId', async (req, res, next, orderId) => {
+router.param('orderId', async (request, response, next, orderId) => {
   try {
-    const fetchedOrder = await Order.findOne({ orderID: orderId })
-    console.log(fetchedOrder)
-    if (!fetchedOrder) {
-      res.status(404)
-      res.end(`Order # ${orderId} not found.`)
-    }
+    request.order = await Order.findOne({ orderId: orderId })
 
-    req.order = fetchedOrder
+    if (!request.order) {
+      response.status(404).send(`Order # ${orderId} not found.`)
+    }
 
     next()
   } catch (err) {
@@ -37,16 +34,16 @@ router.get('/all', async (req, res, next) => {
 })
 
 router.get('/:orderId', (req, res) => {
-  res.end(req.order)
+  res.send(req.order)
 })
 
 router.post('/create', async (req, res, next) => {
   try {
-    const { orderID, state, items, price, clientNotes, resolution, orderDate } =
+    const { orderId, state, items, price, clientNotes, resolution, orderDate } =
       req.body
 
     const createdOrder = await Order.create({
-      orderID,
+      orderId,
       state,
       items,
       price,
@@ -58,8 +55,38 @@ router.post('/create', async (req, res, next) => {
     // TODO - Validate values!
     const savedOrder = await createdOrder.save()
 
-    res.status(200)
-    res.end(`order # ${savedOrder.orderId} created.`)
+    res.status(200).send(`order # ${orderId} created.`)
+  } catch (err) {
+    next(err)
+  }
+})
+
+router.put('/:orderId', async (req, res, next) => {
+  try {
+  } catch (err) {
+    next(err)
+  }
+})
+
+router.patch('/:orderId', async (req, res, next) => {
+  try {
+  } catch (err) {
+    next(err)
+  }
+})
+
+router.delete('/delete/:orderId', async (req, res, next) => {
+  try {
+    const order = req.order
+    const orderId = order.orderId
+
+    const result = await Order.deleteOne({ _id: order._id })
+
+    if (result.deletedCount === 1) {
+      res.status(200).send(`Deleted order # ${orderId}.`)
+    } else {
+      res.status(404).send(`Unable to delete order # ${orderId}.`)
+    }
   } catch (err) {
     next(err)
   }
