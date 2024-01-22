@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose'
 
-const ORDER_STATE = [
+export const ORDER_STATE = [
   ,
   'STARTED',
   'WAITING_APPROVAL',
@@ -10,10 +10,10 @@ const ORDER_STATE = [
   'DELIVERED',
 ]
 
-const RESOLUTION = ['ONGOING', 'COMPLETED', 'DECLINED', 'ABORTED']
+export const RESOLUTION = ['ONGOING', 'COMPLETED', 'DECLINED', 'ABORTED']
 
 export interface Order {
-  orderID: string
+  orderId: string
   state: string
   items: string[]
   price: number
@@ -23,12 +23,12 @@ export interface Order {
 }
 
 export const orderSchema = new Schema<Order>({
-  orderID: String,
-  state: ORDER_STATE,
+  orderId: String,
+  state: String,
   items: [String],
   price: Number,
   clientNotes: String,
-  resolution: RESOLUTION,
+  resolution: String,
   orderDate: Date,
 })
 
