@@ -1,3 +1,14 @@
+-feat(register): add skeleton
+-fix(impr index): change button text
+-feat(impr index): move to function
+-Merge pull request #5 from BraveVlad/fix viewData.ts + customer.html
+-fix(front): viewData.ts
+-feat(front): customer page
+-feat(index-page): add dummy button functionality
+-fix(index): make button text non-selectable
+-feat(index): add placeholder explanation text
+-feat(*)!: hide overflow
+-chore: CHANGELOG
 -feat: add prettier ignore file
 -feat(*)!: add global guide
 -Merge pull request #4 from BraveVlad/feat(front)--orderModels.ts
