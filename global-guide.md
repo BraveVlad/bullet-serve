@@ -66,7 +66,7 @@ Multiple types in a single commit message:
 ## Code
 
 1. No semi colons (unless needed by the language)
-1. No comments
+1. No comments (unless they are relation comments)
 1. Use `prettier`
 
 ## branches
