@@ -1,10 +1,21 @@
-type State = 'ordered' | 'approved' | 'kitchen' | 'paid' | 'delivery'
-type Resolution = 'completed' | 'declined' | 'aborted'
-type Role = 'admin' | 'kitchen' | 'cashier' | 'delivery'
+import { Schema } from 'mongoose'
 
-interface Order {
+const ORDER_STATE = [
+  ,
+  'STARTED',
+  'WAITING_APPROVAL',
+  'KITCHEN',
+  'CASHIER',
+  'DELIVERY',
+  'DELIVERED',
+]
+
+const RESOLUTION = ['ONGOING', 'COMPLETED', 'DECLINED', 'ABORTED']
+const EMOPLOYEE_ROLE = ['ADMIN', 'KITCHEN', 'CASHIER', 'DELIVERY']
+
+export interface Order {
   orderID: string
-  state: State
+  state: string
   items: string[]
   price: number
   clientNotes: string
@@ -12,13 +23,13 @@ interface Order {
   orderDate: Date
 }
 
-interface EmployeeUser {
+interface Employee {
   userName: string
   password: string
-  role: Role
+  role: EmployeeRole
 }
 
-interface CustomerUser {
+interface Customer {
   userName: string
   password: string
   phone: string
