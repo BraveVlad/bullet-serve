@@ -40,7 +40,6 @@ export function getAllOrders(req: CustomRequest, res: Response): void {
   res.json(orders);
 }
 
-// Filter orders based on state
 export function filterOrdersByState(req: CustomRequest, res: Response): void {
   const user: EmployeeUser | CustomerUser | undefined = req.user;
   const requestedState: State = req.params.state as State;
@@ -50,7 +49,7 @@ export function filterOrdersByState(req: CustomRequest, res: Response): void {
   res.json(filteredOrders);
 }
 
-// Dummy orders for demonstration purposes
+// Dummy order
 function getAdminOrders(): Order[] {
   return [
     {
@@ -62,6 +61,5 @@ function getAdminOrders(): Order[] {
       resolution: 'completed',
       orderDate: new Date(),
     },
-    // Add more sample orders as needed
   ];
 }
