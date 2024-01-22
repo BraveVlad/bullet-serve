@@ -6,7 +6,7 @@ import { createServer } from 'http';
 import mongoose from 'mongoose';
 import { router as orderRouter } from './Order.router';
 import { router as menuRouter } from './Menu.router';
-import { router as authRouter } from './Order.router';
+import { router as authRouter } from './Auth.router';
 import { RequestHandler } from 'express-serve-static-core';
 
 const app = express();
@@ -32,22 +32,14 @@ app.use('/api/employees', (req, res, next) => {
 });
 app.use('/api/employees/orders', orderRouter);
 
-// app.use('/api/menu', (req, res, next) => {
-//   if (!req.signedCookies.employeeId) {
-//     res.status(403);
-//     res.end();
-//     return;
-//   }
-// });
+app.use('/api/menu', (req, res, next) => {
+  if (!req.signedCookies.customerId) {
+    res.status(403);
+    res.end();
+    return;
+  }
+});
 app.use('/api/menu', menuRouter);
-
-// app.use('/api/menu', (req, res, next) => {
-//   if (!req.signedCookies.customerId) {
-//     res.status(403);
-//     res.end();
-//     return;
-//   }
-// });
 
 app.use(express.static('public'));
 
