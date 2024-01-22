@@ -1,3 +1,58 @@
+-Merge branch 'main' of https://github.com/BraveVlad/bullet-serve
+-feat(*): add generic button classes
+-feat(back): Implemented PUT, PATCH Order endpoints
+-fix(back): Fixed typo in Order model
+-config(back): prettier rules
+-feat(back): fixed POST create order endopoint
+-feat(back): added DELETE Order endpoint
+-Merge branch 'main' of https://github.com/BraveVlad/bullet-serve
+-feat(back): added orderRouter to main app.
+-feat(back): implemented basic Order API endpoints.
+-feat(back): added features to Customer and Employee model
+-feat+fix(back): several fatures and fixes to Order model and schema
+-feat(back): extends request to hold order as property
+-Merge branch 'main' of https://github.com/BraveVlad/bullet-serve
+-feat(login): add login page
+-refactor(back): seperated models to own files.
+-feat(back): added model schemas and defined models
+-fix(back): converted model constants to enums
+-feat(register): add register button
+-fix(register): all lowercase
+-fix(register): remove action from form
+-impr(register): change padding
+-impr(register): add labels and improve
+-impr(styles): add relation comments
+-impr(global-guide)!: change comment rules
+-chore: CHANGELOG
+-feat(register): add skeleton
+-fix(impr index): change button text
+-feat(impr index): move to function
+-Merge pull request #5 from BraveVlad/fix viewData.ts + customer.html
+-fix(front): viewData.ts
+-feat(front): customer page
+-feat(index-page): add dummy button functionality
+-fix(index): make button text non-selectable
+-feat(index): add placeholder explanation text
+-feat(*)!: hide overflow
+-chore: CHANGELOG
+-feat: add prettier ignore file
+-feat(*)!: add global guide
+-Merge pull request #4 from BraveVlad/feat(front)--orderModels.ts
+-fix(front): orderModel location
+-refactor(front): more front logic
+-feat(front): basic client logic
+-Merge pull request #3 from BraveVlad/feat(front)--orderModels.ts
+-feat(front): orderModels.ts
+-feat: add top margin
+-fix: margin type
+-fix: update margin classes
+-feat: add register page
+-fix: move title to container div
+-feat(index): add page title
+-other(style): compile
+-fix: change css imports
+-feat: add more classes
+-CHANGELOG
 -style: prettier config
 -fix: prettier config max line numbers
 -feat: add prettier config file
