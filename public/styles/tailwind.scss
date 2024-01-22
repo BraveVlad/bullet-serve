@@ -489,3 +489,46 @@
 }
 
 // Margin top end
+
+.btn {
+  background-color: transparent;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 900;
+  transition: all 500ms;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.btn-upper {
+  background-color: transparent;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: all 500ms;
+}
+
+.btn-upper:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.btn-upper:active {
+  transform: scale(0.9);
+}
