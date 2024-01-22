@@ -51,13 +51,22 @@
   flex-direction: column;
   gap: 4rem;
 }
+.register-container__input-container__input {
+  width: 20rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: 2px solid black;
+  padding-left: 0.5rem;
+}
 .register-container__name-container {
   display: flex;
-  gap: 3rem;
+  flex-direction: column;
+  gap: 1rem;
 }
 .register-container__password-container {
   display: flex;
-  gap: 3rem;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
